@@ -9,9 +9,12 @@ public class BinarySearchDemo1 {
 
     public static void main(String[] args) {
 
-    int[] backet= new int[]{1,2,3,4,5,6,7,8,9,10};
+    int[] backet= new int[1000];
+    for(int i=0;i<1000;i++){
+        backet[i]=i;
+    }
 
-       System.out.println("time is : "+findValByBinarySearch(backet,0,backet.length-1,3));
+       System.out.println("location is : "+findValByBinarySearch(backet,0,backet.length-1,10));
 
     }
 
